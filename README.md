@@ -32,7 +32,7 @@ For parallel coverage or a declared race, read `skills/swarm/SKILL.md`. It uses 
 
 The skills target T3 execution; installing them in another harness does not supply T3 orchestration tools. Install the complete set so sibling references resolve. Selecting individual skills is not dependency-aware: a skill may require companions that the installer does not select automatically. Keep the original skill directory names.
 
-The following is the standard GitHub-source example; GitHub-source installation remains untested until these artifacts are published. Select your harness explicitly:
+GitHub-source installation was verified with skills CLI 1.7.6 in an isolated project (see [installation evidence](evals/installation.md)). Select your harness explicitly:
 
 ```sh
 npx skills add toqoz/t3-pstack --skill '*' --agent codex

@@ -386,3 +386,8 @@ The staged whitespace check has one inherited empty final line in automate-me/SK
 
 
 The final staged-only export passed 60 tests, the 573-file pinned-source check and the 616-file generation check under the actual private checkout umask. The publication candidate contains 705 files, including all pinned generated fixtures and no disposable .agents artifacts. GitHub-source installation and remote CI are checked only after push; passing these local release checks does not close the recorded Autopilot/A-to-B/periodic-detection or full-workflow gaps.
+
+
+## Published release checks
+
+Commit 8224ba372b50cc32d881cee15c8bfc3b5ca31e4e was pushed to origin/main after authentication was restored. [GitHub Actions](https://github.com/toqoz/t3-pstack/actions/runs/42321182773) completed successfully, including 60 tests, source records, pinned-source fetching and generation verification. A new isolated skills CLI 1.7.6 installation from the public GitHub source preserved all 60 skills, 615 per-skill files, 60 license notices and six executable files. No fixture skills were discovered and the sibling reference resolved. This closes the previously recorded GitHub-source/remote-CI verification gaps; it does not establish Home Manager activation or complete live workflow execution.
