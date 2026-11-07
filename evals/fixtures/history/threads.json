@@ -1,0 +1,97 @@
+{
+  "projectId": "project-main",
+  "currentThreadId": "root",
+  "threads": [
+    {
+      "threadId": "root",
+      "projectId": "project-main",
+      "parentThreadId": null,
+      "relationshipToParent": null,
+      "providerInstanceId": "codex",
+      "status": "running"
+    },
+    {
+      "threadId": "child-claude",
+      "projectId": "project-main",
+      "parentThreadId": "root",
+      "relationshipToParent": "subagent",
+      "providerInstanceId": "claudeAgent",
+      "status": "completed"
+    },
+    {
+      "threadId": "grandchild-codex",
+      "projectId": "project-main",
+      "parentThreadId": "child-claude",
+      "relationshipToParent": "subagent",
+      "providerInstanceId": "codex",
+      "status": "completed"
+    },
+    {
+      "threadId": "unfinished",
+      "projectId": "project-main",
+      "parentThreadId": "root",
+      "relationshipToParent": "subagent",
+      "providerInstanceId": "codex",
+      "status": "running"
+    },
+    {
+      "threadId": "other-conversation",
+      "projectId": "project-main",
+      "parentThreadId": null,
+      "relationshipToParent": null,
+      "providerInstanceId": "claudeAgent",
+      "status": "idle"
+    },
+    {
+      "threadId": "human-fork",
+      "projectId": "project-main",
+      "parentThreadId": "root",
+      "relationshipToParent": "fork",
+      "providerInstanceId": "codex",
+      "status": "completed"
+    },
+    {
+      "threadId": "foreign",
+      "projectId": "project-other",
+      "parentThreadId": null,
+      "relationshipToParent": null,
+      "providerInstanceId": "claudeAgent",
+      "status": "completed"
+    },
+    {
+      "threadId": "reflect-reviewer",
+      "projectId": "project-main",
+      "parentThreadId": "root",
+      "relationshipToParent": "subagent",
+      "providerInstanceId": "claudeAgent",
+      "status": "completed",
+      "createdAfterCaptureCutoff": true
+    },
+    {
+      "threadId": "old-conversation",
+      "projectId": "project-main",
+      "parentThreadId": null,
+      "relationshipToParent": null,
+      "providerInstanceId": "codex",
+      "status": "idle",
+      "updatedAt": "2026-11-07T00:00:00Z"
+    },
+    {
+      "threadId": "failed-child",
+      "projectId": "project-main",
+      "parentThreadId": "root",
+      "relationshipToParent": "subagent",
+      "providerInstanceId": "claudeAgent",
+      "status": "failed"
+    },
+    {
+      "threadId": "interrupted-conversation",
+      "projectId": "project-main",
+      "parentThreadId": null,
+      "relationshipToParent": null,
+      "providerInstanceId": "codex",
+      "status": "interrupted"
+    }
+  ],
+  "nextCursor": null
+}

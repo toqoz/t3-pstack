@@ -1,0 +1,127 @@
+[
+  {
+    "sourceThreadId": "root",
+    "itemId": "human-1",
+    "type": "user_message",
+    "createdBy": "user",
+    "visibility": "local",
+    "at": "2026-11-01T00:00:00Z",
+    "text": "Prefer short sentences."
+  },
+  {
+    "sourceThreadId": "child-claude",
+    "itemId": "brief-1",
+    "type": "user_message",
+    "createdBy": "agent",
+    "senderThreadId": "root",
+    "at": "2026-11-02T00:00:00Z",
+    "text": "The user said: Prefer short sentences. Use the sample SKILL.md."
+  },
+  {
+    "sourceThreadId": "child-claude",
+    "itemId": "read-1",
+    "type": "command_execution",
+    "createdBy": "agent",
+    "at": "2026-11-02T00:01:00Z",
+    "text": "$ cat /distribution/skills/sample/SKILL.md\nSample skill body."
+  },
+  {
+    "sourceThreadId": "child-claude",
+    "itemId": "result-1",
+    "type": "assistant_message",
+    "createdBy": "agent",
+    "at": "2026-11-02T00:02:00Z",
+    "text": "Applied sample guidance; found a cleanup failure."
+  },
+  {
+    "sourceThreadId": "root",
+    "itemId": "notification-1",
+    "type": "assistant_message",
+    "createdBy": "system",
+    "copiedFrom": {
+      "sourceThreadId": "child-claude",
+      "itemId": "result-1"
+    },
+    "at": "2026-11-02T00:02:01Z",
+    "text": "Applied sample guidance; found a cleanup failure."
+  },
+  {
+    "sourceThreadId": "grandchild-codex",
+    "itemId": "grandchild-command",
+    "type": "command_execution",
+    "createdBy": "agent",
+    "at": "2026-11-02T00:01:30Z",
+    "text": "$ run-cleanup\nexit 1: proof artifact removed"
+  },
+  {
+    "sourceThreadId": "root",
+    "itemId": "native-summary",
+    "type": "assistant_message",
+    "createdBy": "agent",
+    "subagentId": "native-child",
+    "at": "2026-11-03T00:00:00Z",
+    "text": "Native child completed; underlying activity not exposed."
+  },
+  {
+    "sourceThreadId": "other-conversation",
+    "itemId": "human-2",
+    "type": "user_message",
+    "createdBy": "user",
+    "visibility": "local",
+    "at": "2026-11-05T00:00:00Z",
+    "text": "Prefer short sentences."
+  },
+  {
+    "sourceThreadId": "root",
+    "itemId": "human-1",
+    "type": "user_message",
+    "createdBy": "user",
+    "visibility": "inherited",
+    "observedInThread": "human-fork",
+    "at": "2026-11-01T00:00:00Z",
+    "text": "Prefer short sentences."
+  },
+  {
+    "sourceThreadId": "human-fork",
+    "itemId": "fork-human",
+    "type": "user_message",
+    "createdBy": "user",
+    "visibility": "local",
+    "at": "2026-11-06T00:00:00Z",
+    "text": "Keep citations near claims."
+  },
+  {
+    "sourceThreadId": "old-conversation",
+    "itemId": "old-human",
+    "type": "user_message",
+    "createdBy": "user",
+    "at": "2026-08-01T00:00:00Z",
+    "text": "Old preference evidence."
+  },
+  {
+    "sourceThreadId": "failed-child",
+    "itemId": "failed-command",
+    "type": "command_execution",
+    "createdBy": "agent",
+    "at": "2026-11-04T00:00:00Z",
+    "text": "$ verify-proof\nexit 1: required output missing"
+  },
+  {
+    "sourceThreadId": "failed-child",
+    "itemId": "child-human-correction",
+    "type": "user_message",
+    "createdBy": "user",
+    "visibility": "local",
+    "at": "2026-11-04T00:01:00Z",
+    "text": "Do not claim verification succeeded when the output is missing."
+  },
+  {
+    "sourceThreadId": "interrupted-conversation",
+    "itemId": "interrupted-human",
+    "type": "user_message",
+    "createdBy": "user",
+    "visibility": "local",
+    "at": "2026-11-06T00:00:00Z",
+    "text": "Stop repeating the same failed approach."
+  }
+]

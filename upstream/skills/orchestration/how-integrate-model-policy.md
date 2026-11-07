@@ -1,0 +1,15 @@
+# Model policy integration
+
+The pinned pstack poteto-mode Subagents section is the source of per-job effort/speed decisions referenced by how, why, swarm, arena, no-comments, recall, and reflect; architect/interrogate inherit the relevant arena rules. Retaining these decisions does not require invoking poteto-mode or another coordination workflow.
+
+The user chose Codex/Opus as the T3 role defaults and Markdown preferences. The user subsequently confirmed that saved effort is a starting level, as upstream uses it. A current task's explicit model/fixed effort/speed request is authoritative. Preserve all original role names and aliases; add no model-ranking registry or runtime configuration parser.
+
+Shared models.md holds the translated rules: raise one step for hardest work, lower one for judgment or two or more for routine work, standard speed unless urgent, and the configured model/speed exception for explicitly delegated verification. Evidence checking inside another role does not turn that role into verification. Recall keeps its own fast/cheap selection, independent of other workflow models.
+
+Setup maps abstract budgets to the selected model's highest supported level at or below target and shows rounding in its existing proposal. Dispatch maps a job-derived level to the nearest supported level on that same model, disclosing rounding. Neither authorizes changing a provider/model or overriding a current-task exact setting. Use host option IDs and actual supported values, then route settings different from the parent through delegate_task. No native API is treated as an option-bearing substitute when the host disallows that use.
+
+Speed mappings use actual host capabilities. Codex serviceTier priority is a host mapping of Fast mode only when exposed for the selected model; [official OpenAI documentation](https://developers.openai.com/api/docs/guides/fast-mode) establishes the API service-tier meaning, not availability or measured latency in every T3 environment. Claude fastMode is used only when the host exposes it. No new fast default or personal preference was written in this change. Verification preserves the configured worker speed, including standard when no acceleration is configured.
+
+For A-to-B updates, inspect both the calling workflows and the referenced Subagents/setup policies. Model-option translation must not silently discard job selection, role identity, verification exceptions, alias semantics, or explicit task precedence. Review actual option support rather than copying an old catalog. Pure host translations remain T3 changes; deliberate departures need a separate Design decision.
+
+Independent synthetic evaluations resolved normal/judgment/routine/hardest jobs, saved preferences, explicit fixed settings, aliases, verification versus citation checking, budget rounding versus an exact unsupported request, and native/delegate eligibility. These do not prove live model dispatch, option inheritance, latency, or cost. No benchmark or personal configuration change is claimed.

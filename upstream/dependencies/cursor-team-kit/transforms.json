@@ -1,0 +1,14 @@
+{
+  "skills/deslop": {
+    "target": "skills/deslop",
+    "replacements": []
+  },
+  "skills/control-ui": {
+    "target": "skills/control-ui",
+    "replacements": []
+  },
+  "skills/control-cli": {
+    "target": "skills/control-cli",
+    "replacements": []
+  }
+}

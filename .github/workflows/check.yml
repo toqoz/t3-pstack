@@ -1,0 +1,28 @@
+name: Check upstream records
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: python3 -m unittest discover -s tests -v
+      - run: python3 tools/upstream.py check
+      - name: Fetch pinned upstream
+        shell: bash
+        run: |
+          mkdir -p .agents/cache/cursor-plugins
+          git -C .agents/cache/cursor-plugins init
+          git -C .agents/cache/cursor-plugins remote add origin https://github.com/cursor/plugins.git
+          mapfile -t revisions < <(python3 -c 'import glob,json; print("\n".join(sorted({json.load(open(p))["commit"] for p in ["upstream/lock.json", *glob.glob("upstream/dependencies/*/lock.json")]})))')
+          for revision in "${revisions[@]}"; do
+            git -C .agents/cache/cursor-plugins fetch --depth=1 origin "$revision"
+          done
+      - run: python3 -m tools.build --repo .agents/cache/cursor-plugins --check

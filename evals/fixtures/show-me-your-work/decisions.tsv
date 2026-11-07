@@ -1,0 +1,6 @@
+ts	phase	decision	why	evidence	result
+2026-11-07T01:00:00Z	frame	chose streaming export	bound memory	alpha turn 1	open
+2026-11-07T01:01:00Z	verify	export tests passed	verify output	alpha turn 2	tests green
+2026-11-07T01:02:00Z	start	beta started	separate run	beta identity	open
+2026-11-07T01:03:00Z	deploy	deployed unrelated app	beta task	beta turn 2	open
+2026-11-07T01:04:00Z	start	alpha resumed after beta rows 01:02-01:03	resume ownership	alpha identity	open

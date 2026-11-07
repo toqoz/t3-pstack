@@ -1,0 +1,7 @@
+.agents/cache/
+.agents/state/
+.agents/share/RETRO.md
+__pycache__/
+
+# These pinned upstream outputs are test fixtures, not local build artifacts.
+!skills/statechart/scripts/test/**/*.out
