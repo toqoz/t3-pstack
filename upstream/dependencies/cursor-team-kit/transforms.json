@@ -1,7 +1,14 @@
 {
   "skills/deslop": {
     "target": "skills/deslop",
-    "replacements": []
+    "replacements": [
+      {
+        "file": "SKILL.md",
+        "before": "Check the diff against main and remove AI-generated slop introduced in the branch.",
+        "after": "Check the diff against the base branch and remove AI-generated slop introduced in the branch.",
+        "reason": "Use the base branch instead of assuming its name is main. See how-integrate-deslop.md."
+      }
+    ]
   },
   "skills/control-ui": {
     "target": "skills/control-ui",

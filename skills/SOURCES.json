@@ -3752,15 +3752,16 @@
       "source": "skills/deslop/SKILL.md",
       "source_sha256": "2f7b7def74af7ed11f5b44b4d32f0f91fca8c5d1f92bf2171e8d12fd33a0f810",
       "source_mode": "100644",
-      "output_sha256": "2f7b7def74af7ed11f5b44b4d32f0f91fca8c5d1f92bf2171e8d12fd33a0f810",
+      "output_sha256": "861f71dc650555d317b6302ddfce8b1e9ac7aba66b1c7ac19e5c120cfad0d865",
       "source_root": "cursor-team-kit"
     },
     "deslop/LICENSE.txt": {
       "generated_from": [
-        "cursor-team-kit/LICENSE"
+        "cursor-team-kit/LICENSE",
+        "LICENSE"
       ],
       "source_mode": "100644",
-      "output_sha256": "702f5f331b56aff0e33d8c7826df5202559f894145eb70355c6477b55b5bb8a0",
+      "output_sha256": "7903ed034f05be06fc67afa6ac61f2445ab81762254f84105e2d33d81e69a92f",
       "source_root": "cursor-team-kit"
     }
   },
@@ -3772,7 +3773,7 @@
       "remote": "https://github.com/cursor/plugins.git",
       "commit": "2776ddd2355d6d6c8747d3964600f28daf62f049",
       "lock": "822e25e88f32f33cbd3f2b2bdf959534f1a753d7543a0cc3848b2043516a1e67",
-      "transforms": "48d23e445c8c0a2ef6def2acc6f2719e61cf0dad089c1fb83dd14afca46cc02b"
+      "transforms": "f3ebe41126de7282e6a92aa2455e05ca577b61f3ffe32c6481d7eb128f12d9af"
     }
   }
 }

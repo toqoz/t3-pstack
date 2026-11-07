@@ -157,4 +157,4 @@ Each replacement must match once in the original source. Overlapping source span
 Original project code is [MIT licensed](LICENSE). Upstream pstack's full [MIT license and Lauren Tan copyright notice](licenses/pstack-MIT.txt) are preserved separately and must accompany generated upstream content. No code or skill text has been copied from the reference T3 port.
 
 
-The supporting deslop, control-ui, and control-cli skills come unchanged from [cursor-team-kit](upstream/dependencies/cursor-team-kit/README.md), with an independent source lock and [Cursor MIT notice](licenses/cursor-team-kit-MIT.txt). Build verifies that pin too and records its source identity in SOURCES.json. They are additional dependencies, not part of pstack's 58-skill count.
+The supporting deslop, control-ui, and control-cli skills come from [cursor-team-kit](upstream/dependencies/cursor-team-kit/README.md), with an independent source lock and [Cursor MIT notice](licenses/cursor-team-kit-MIT.txt). Build verifies that pin too and records its source identity in SOURCES.json. They are additional dependencies, not part of pstack's 58-skill count.

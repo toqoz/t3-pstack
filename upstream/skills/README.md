@@ -15,7 +15,7 @@ The table counts changes among adopted skills. A skill can count in multiple col
 | [writing](writing/README.md) | 2 | 0 | 0 |
 | Total | 20 | 2 | 2 |
 
-Three additional supporting skills, deslop, control-ui, and control-cli, are adopted unchanged from [cursor-team-kit](../dependencies/cursor-team-kit/README.md). They are separate from the 58 pstack skills.
+Three additional supporting skills, deslop, control-ui, and control-cli, are adopted from [cursor-team-kit](../dependencies/cursor-team-kit/README.md). They are separate from the 58 pstack skills.
 
 Omitted: **make-bot-ui** assumes Grok Bot’s long lifecycle. Grok Bot and T3 Code have different lifecycles, so this workflow seems unlikely to fit T3 Code well.
 
