@@ -46,3 +46,11 @@ A Claude Opus 5.5 owner saved checkpoint unit 1 and explicitly dispatched a Code
 Post-cancel evidence showed the owner retained its completed result with no pending child runs, the Codex descendant and its command were interrupted, and exact fixture PID 46349 had exited before its natural lifetime. No cooperative stop sentinel or shell kill was used. A fresh Claude Opus 5.5 task read unit 1 and wrote unit 2; its completion notification woke the coordinator, which read and validated the actual output. The schedule was deleted.
 
 This verifies completion delivery, cascading cancellation of this nested cross-provider fixture, foreground-process exit, and same-target checkpoint handoff. It does not verify every detached process tree, approval/question delivery, PR watches, or automatic stall detection. The remaining G1 blocker is detection, not the availability of cancellation or replacement. See [the reproducible procedure](../../../evals/delegate-cancel-handoff.md).
+
+## PR-watch read failure recovery
+
+The 2026-11-11 handoff authorized this T3 adaptation. A failed host watch must trigger a fresh assessment of the current head and actual gates. Shell reads can establish forge state but cannot prove recovery of the host authentication path. A non-required queued suite with zero CheckRuns does not itself justify waiting. Unknown head or gate state forbids merging. Existing merge authorization, independent review, and verification gates still apply.
+
+Babysit now records unresolved host errors and remaining work instead of repeatedly registering the same failed watch. A needed watch can resume after a successful read through the same host path or a verified configuration correction. Notifications requesting another registration do not supply that evidence. This changes the host adaptation only; it does not repair T3 authentication or its failure counter.
+
+The recovery paragraph is isolated in the Babysit transformation. Remove it when the host contract provides equivalent bounded failure recovery and the generated playbook preserves all four cases in [the verification record](../../../evals/pr-watch-recovery.md). Removal checks must cover shell-only success, host recovery with pending checks, authorized ready continuation, and unknown reads.

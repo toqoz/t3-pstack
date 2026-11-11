@@ -402,7 +402,7 @@
       "source": "skills/poteto-mode/playbooks/babysit.md",
       "source_sha256": "d546a937ed800abe1d29aae8a689fb57212280fdde62fae1fc1dc7f2efd9d904",
       "source_mode": "100644",
-      "output_sha256": "795e745e53e38848d9faae6c4f92cc5f596d9cfd79a89ad12d72eee07b21f04b"
+      "output_sha256": "9ae72169b39b68698513777f9376362120695dec459972753d99d441dbbb7bf0"
     },
     "poteto-mode/playbooks/bug-fix.md": {
       "source": "skills/poteto-mode/playbooks/bug-fix.md",
@@ -3765,7 +3765,7 @@
       "source_root": "cursor-team-kit"
     }
   },
-  "transforms": "e440f17cce93ddfc8ae6c7e6cec9aeff3d8ff4742ea676f3074170a7d1c3344d",
+  "transforms": "5efc593fa3fb5dc1bde68efa65da39710ce5ca1a3078bf5235c8c6f0d575e2c8",
   "adapter": "d84a7d789dd2b21a06f3ca22bd73d52177648e0ff479c53c041a494e718c0348",
   "models": "302b54b79eaa7d74ccba4be1ed0cd7cb37ed5c779b60394d27a769405cb7fe68",
   "dependencies": {

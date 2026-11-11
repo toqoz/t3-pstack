@@ -37,7 +37,7 @@
 
 ## poteto-mode
 
-- **T3:** Use managed worktrees, configured role models, scoped activity, and host PR waits. Silent-hang and approval-wait detection in delegated workers remains unresolved; unattended Autopilot execution is blocked.
+- **T3:** Use managed worktrees, configured role models, scoped activity, and host PR waits with gate reassessment and evidence-based recovery after read failures. Silent-hang and approval-wait detection in delegated workers remains unresolved; unattended Autopilot execution is blocked.
 
 [how-integrate-poteto-mode.md](how-integrate-poteto-mode.md)
 
